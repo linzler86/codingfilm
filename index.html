@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding film</title>
+    <link rel="shortcut icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="css/ui.css"> <!--외부CSS-->
+</head>
+<body>
+    <div id="wrap"> <!--wrap Start-->
+        <header class="navbar"> <!--header Start-->
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <div class="top">
+                <button type="button" id="modal_Btn">COPYRIGHT</button>
+                <span class="toggle_Btn" onclick="toggle()"><img src="img/hambuger-icon.png"></span>
+                <nav class="nav">
+                    <ul>
+                        <li><a onclick="alert('정보보호학과 18학번 최용준')">사이트저작자</a></li>
+                        <li><a onclick="window.open('https://www.facebook.com/linzler86')">저작자 페이스북[바로가기]</a></li>
+                        <li><a onclick="window.open('https://www.instagram.com/linzler86')">저작자 인스타[바로가기]</a></li>
+                        <li><a onclick="alert('현재 버전은 Ver 1.0.0')">버전정보</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> <!--header End-->
+
+        <div id="modal" class="modal_Wrap"> <!--modal Start-->
+            <div class="modal_Content">
+                <span class="close">&times;</span>
+                <p>
+                    COPYRIGHT&copy;2021 최용준 ALL RIGHTS RESERVED<br>
+                    최용준이 만든 웹사이트 입니다.
+                </p>
+            </div>
+        </div> <!--modal End-->
+
+        <section class="container"> <!--left container Start-->
+            <div class="info">
+                <h1>Coding film</h1>
+                <p>최용준의 블로그입니다.<br>직접 촬영한 사진과 공부한 코드를 업로드 합니다.</p>
+                <ul>
+                    <li><input id="id" type="text" placeholder="아이디를 입력하세요."></li>
+                    <li><input id="pw" type="password" placeholder="비밀번호를 입력하세요."></li>
+                    <button type="button" id="btn">로그인</button>
+                </ul>
+            </div>
+        </section> <!--left container End-->
+
+        <div class="slider"> <!--bottom slide Start-->
+            <img src="img/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="img/s_bg1.jpg" class="active thumbnail">
+                <img src="img/s_bg2.jpg" class="thumbnail">
+                <img src="img/s_bg3.jpg" class="thumbnail">
+                <img src="img/s_bg4.jpg" class="thumbnail">
+                <img src="img/s_bg5.jpg" class="thumbnail">
+            </div>
+            <img src="img/right-arrow.png" id="next">
+        </div> <!--bottom slide Start-->
+    </div> <!--wrap End-->
+    
+    <script src="js/slide.js"></script> <!-- Slide -->
+    <script src="js/modal.js"></script> <!-- Modal -->
+    <script src="js/login.js"></script> <!-- login -->
+    <script src="js/toggle.js"></script> <!-- Toggle -->
+</body>
+</html> 

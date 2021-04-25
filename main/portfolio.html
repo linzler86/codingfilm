@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Coding film</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+<link rel="shortcut icon" href="../img/logo.ico">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/btn_Toggle.js"></script>
+<script src="../js/tab.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="">Coding film</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="login.html">메인화면</a></li>
+                    <li><a href="profile.html">내소개</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li><a href="hobby.html">취미(사진)</a></li>
+                    <li><a href="teamproject.html">팀프로젝트사이트</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+
+        <section class="content" style="background-color: #E8F5FF; padding-bottom: 50px;">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">Portfolio</h2>
+                    <p class="desc">
+                        사이트를 제작하며 공부한 JavaScript 코드를 정리했습니다.
+                    </p>
+                    <div class="call_Wrap">
+                        <div class="call_Content" onclick="openTab('c1');">login</div>
+                        <div class="call_Content" onclick="openTab('c2');">selpic</div>
+                        <div class="call_Content" onclick="openTab('c3');">selbg</div>
+                        <div class="call_Content" onclick="openTab('c4');">menu</div>
+                        <div class="call_Content" onclick="openTab('c5');">button</div>
+                    </div>
+            
+                    <div id="c1" class="containerTab" style="background: rgb(36, 36, 36)">
+                        <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
+                        <h2>로그인 기능</h2>
+                        <img src="../img/login.png">
+                    </div>
+            
+                    <div id="c2" class="containerTab" style="background: rgb(36, 36, 36)">
+                        <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
+                        <h2>사진 선택 기능</h2>
+                        <img src="../img/hobby.png">
+                    </div>
+            
+                    <div id="c3" class="containerTab" style="background: rgb(36, 36, 36);">
+                        <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
+                        <h2>배경 선택 기능</h2>
+                        <img src="../img/slide.png">
+                    </div>
+            
+                    <div id="c4" class="containerTab" style="background: rgb(36, 36, 36)">
+                        <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
+                        <h2>메뉴 기능</h2>
+                        <img src="../img/modal.png">
+                    </div>
+    
+                    <div id="c5" class="containerTab" style="background: rgb(36, 36, 36)">
+                        <span onclick="this.parentElement.style.display='none'" class="closeBtn">&times;</span>
+                        <h2>사진 출력 버튼</h2>
+                        <img src="../img/tab.png">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">COPYRIGHT&copy;2021 최용준 ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+</body>
+</html>

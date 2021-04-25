@@ -1,0 +1,306 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* 기본 CSS */
+/* 모바일&태블릿용 CSS */
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* header */
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .logo {
+  width: 100px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top img {
+  width: 50px;
+  height: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.top button {
+  padding: 8px 25px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav {
+  width: 40%;
+  padding: 20px 10px;
+  text-align: right;
+  background-color: rgba(130, 130, 130, 0.7);
+  display: none;
+  z-index: 20;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 6px;
+}
+
+.nav li {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav li a:hover {
+  background-color: orange;
+  border-radius: 4px;
+}
+
+/* modal */
+.modal_Wrap {
+  /*모달창에 전체틀*/
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_Content {
+  /*모달창의 메인*/
+  margin: auto;
+  padding: 20px;
+  width: 70%;
+  border: 1px solid grey;
+  background-color: #fff;
+}
+
+.modal_Content p {
+  /*모달창의 본문*/
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.close {
+  /*모달창을 닫는 X버튼*/
+  float: right;
+  color: grey;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  /*X버튼에 마우스가 올라가거나 요소가 선택된 경우, 이벤트 상태 일때 실행*/
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* left container */
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info {
+  width: 460px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-44%);
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+
+.info p {
+  color: #f0eef1;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.info input {
+  width: 60%;
+  padding: 8px 2px;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px; /* input박스안 간격 */
+}
+
+::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+.info ul li {
+  list-style: none;
+}
+
+.info ul li:nth-child(2) {
+  margin: 10px 0;
+}
+
+#btn {
+  padding: 8px 123px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* bottom slide */
+.slider {
+  display: none;
+}
+
+/* PC용 CSS */
+@media all and (min-width: 1100px) {
+  /* header */
+  .top img {
+    margin-left: 50px;
+  }
+
+  .nav {
+    width: 25%;
+    padding: 30px 10px;
+    text-align: left;
+    top: 120px;
+  }
+
+  .nav li a {
+    font-size: 16px;
+  }
+
+  /* modal */
+  .modal_Content p {
+    font-size: 20px;
+  }
+
+  /* left container */
+  .container {
+    width: 50%;
+  }
+
+  .info {
+    width: 550px;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .info h1 {
+    margin-left: 0;
+  }
+
+  .info input {
+    width: 50%;
+  }
+
+  ::placeholder {
+    color: #ccc;
+    text-align: left;
+  }
+
+  #btn {
+    padding: 8px 123px;
+    padding: 0.5rem 7.688rem;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+  }
+
+  #prev,
+  #next {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .preview {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+  }
+
+  .preview img {
+    width: 60px;
+    margin: 0 10px;
+    opacity: 0.4;
+  }
+
+  .preview .active {
+    display: block;
+    border: 3px solid #fff;
+    width: 100px;
+    opacity: 1;
+  }
+}

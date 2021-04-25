@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Coding film</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="shortcut icon" href="../img/logo.ico">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/btn_Toggle.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="">Coding film</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="login.html">메인화면</a></li>
+                    <li><a href="profile.html">내소개</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li><a href="hobby.html">취미(사진)</a></li>
+                    <li><a href="teamproject.html">팀프로젝트사이트</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+
+        <article class="slider">
+            <img src="../img/main_bg2.jpg">
+        </article>
+
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">BLOG 소개</h2>
+                    <p class="desc">최용준의 블로그입니다.<br>직접 촬영한 사진과 공부한 코드를 업로드 합니다. 차후 팀프로젝트도 올릴 예정입니다.</p>
+                </div>
+            </section>
+
+            <section class="promotion-section">
+                <div class="container">
+                    <ul class="promo-list">
+                        <li>
+                            <a href="profile.html">
+                                <img src="../img/side01.png">
+                                <h3>내소개</h3> 
+                                <p>제 소개를 간략하게 해둔 페이지 입니다.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                <img src="../img/side02.png">
+                                <h3>포트폴리오</h3>
+                                <p>사이트를 제작하며 공부한 JavaScript코드를 정리해두었습니다.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hobby.html">
+                                <img src="../img/side03.png">
+                                <h3>취미(사진)</h3>
+                                <p>제가 직접 찍은 사진을 게시해둔 페이지 입니다.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="teamproject.html">
+                                <img src="../img/side04.png">
+                                <h3>팀프로젝트</h3>
+                                <p>팀프로젝트를 구상해둔 페이지 입니다.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section class="blog-section">
+                <div class="container">
+                    <h2 class="sec-tit">PHOTO</h2>
+                    <ul class="blog-list">
+                        <li>
+                            <a href="#"><img src="../img/bg1.jpg"></a>
+                            <time datetime="2018-08-25">2018년 8월 25일</time>
+                            <a href=""><h3> 붉게 물든 대포항</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg3.jpg"></a>
+                            <time datetime="2019-07-17">2019년 7월 17일</time>
+                            <a href=""><h3>장호항의 파도 </h3></a>
+                        </li>
+                        <li>
+                            <img src="../img/bg5.jpg">
+                            <time datetime="2019-08-05">2019년 8월 05일</time>
+                            <h3>가족여행 </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="container">
+                    <h2 class="sec-tit">문의하기</h2>
+                    <div class="form-box">
+                        <form action="" method="">
+                            <fieldset class="cfixed">
+                                <legend class="blind">문의하기</legend>
+                                <div class="form">
+                                    <label for="name" class="blind">이름</label>
+                                    <input type="text" id="name" placeholder="이름">
+                                    <label for="phone" class="blind">전화번호</label>
+                                    <input type="tel" id="phone" placeholder="전화번호">
+                                    <label for="email" class="blind">이메일</label>
+                                    <input type="email" id="email" placeholder="이메일주소">
+                                </div>
+                                <div class="textarea">
+                                    <label for="message" class="blind">문의사항</label>
+                                    <textarea name="message" id="message" placeholder="문의사항"></textarea>
+                                </div>
+                            </fieldset>
+                            <div class="send-btn">
+                                <button onclick="alert('전송되었습니다.')">저작자에게 문의하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">COPYRIGHT&copy;2021 최용준 ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+</body>
+</html>

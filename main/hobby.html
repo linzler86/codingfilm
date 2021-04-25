@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Coding film</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/hobby.css">
+<link rel="shortcut icon" href="../img/logo.ico">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/btn_Toggle.js"></script>
+<script src="../js/hobby.js"></script>
+<style>
+    #container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #container .content {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px 0;
+  }
+  
+  .content img {
+    width: 400px;
+  }
+  
+  .content p {
+    font-size: 20px;
+  }
+  
+  /* imgpart */
+  
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 4px 0;
+    color: white;
+}
+
+.sumnail {
+    position: relative;
+    margin-top: 20px;
+}
+
+.sumnail:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="">Coding film</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="login.html">메인화면</a></li>
+                    <li><a href="profile.html">내소개</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li><a href="hobby.html">취미(사진)</a></li>
+                    <li><a href="teamproject.html">팀프로젝트사이트</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+
+        <section class="content" style="background-color: #E8F5FF; padding-bottom: 50px;">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">Hobby</h2>
+                    <p class="desc">
+                        저의 취미를 담고있는 페이지입니다. 이곳에서 제가 찍은 사진을 볼 수 있습니다.
+                    </p>
+                    <br><br><br><br><br><br><br>
+                    <div class="container"> <!--전체-->
+                        <div class="mySlides">
+                          <img src="../img/pflower.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <img src="../img/pflower2.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <img src="../img/yflower1.jpg" style="width:100%">
+                        </div>
+                          
+                        <div class="mySlides">
+                          <img src="../img/yflower.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">
+                          <img src="../img/wflower.jpg" style="width:100%">
+                        </div>
+                          
+                        <div class="mySlides">
+                          <img src="../img/wrose.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="caption-container"> <!--지정해둔 alt문자-->
+                          <p id="caption"></p>
+                        </div>
+                      
+                        <div class="sumnail"> <!--썸네일 전체-->
+                          <div class="column">
+                            <img class="demo cursor" src="../img/pflower.jpg" style="width:100%" onclick="currentSlide(1)" alt="[1]당신의 마음">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/pflower2.jpg" style="width:100%" onclick="currentSlide(2)" alt="[2]화관">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/yflower1.jpg" style="width:100%" onclick="currentSlide(3)" alt="[3]완벽한 성취">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/yflower.jpg" style="width:100%" onclick="currentSlide(4)" alt="[4]행복, 감사하는 마음">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../img/wflower.jpg" style="width:100%" onclick="currentSlide(5)" alt="[5]숨겨둔 진실">
+                          </div>    
+                          <div class="column">
+                            <img class="demo cursor" src="../img/wrose.jpg" style="width:100%" onclick="currentSlide(6)" alt="[6]존경">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">COPYRIGHT&copy;2021 최용준 ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+</body>
+</html>
